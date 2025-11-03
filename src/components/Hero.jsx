@@ -13,7 +13,7 @@ const slides = [
     ),
     text: (
       <>
-        Com a <b>MentodaMed</b>, você acessa consultas médicas online de forma
+        Com a <b>MentoraMed</b>, você acessa consultas médicas online de forma
         rápida, segura e prática.
         <br />
         <br />
