@@ -41,7 +41,7 @@ const NavMenu = () => (
 
       <li aria-haspopup="true" className="h-link">
         <a
-          href="https://app.mentoramed.com.br/"
+          href="https://mentoramed.app.br/"
           id="area-do-colaborador"
           className="h-scroll-link"
         >
