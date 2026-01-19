@@ -88,7 +88,7 @@ jobs:
       
           AUTH_CODE=$(curl -sS -w '%{http_code}' -o auth.json \
             -H "Content-Type: application/json" \
-            -X POST "https://portainer.nileo.com.br/api/auth" \
+            -X POST "https://infra.nileo.com.br/api/auth" \
             --data "$AUTH_PAYLOAD")
       
           echo "Auth HTTP $AUTH_CODE"
@@ -109,7 +109,7 @@ jobs:
           PUT_CODE=$(curl -sS -w '%{http_code}' -o resp.json \
             -H "Authorization: Bearer $JWT" \
             -H "Content-Type: application/json" \
-            -X PUT "https://portainer.nileo.com.br/api/stacks/24?endpointId=8" \
+            -X PUT "https://infra.nileo.com.br/api/stacks/19?endpointId=8" \
             --data-binary @body.json)
       
           echo "Update HTTP $PUT_CODE"
