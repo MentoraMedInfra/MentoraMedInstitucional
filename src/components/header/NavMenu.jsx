@@ -1,5 +1,3 @@
-import SocialLinks from "./SocialLinks";
-
 const NavMenu = () => (
   <nav className="wsmenu clearfix">
     <ul className="wsmenu-list nav-blue">
@@ -36,6 +34,12 @@ const NavMenu = () => (
       <li aria-haspopup="true" className="h-link">
         <a href="/#nr-1" className="h-scroll-link">
           NR-1
+        </a>
+      </li>
+
+      <li aria-haspopup="true" className="h-link">
+        <a href="/#blog" className="h-scroll-link">
+          Blog
         </a>
       </li>
 

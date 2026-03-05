@@ -778,10 +778,6 @@ section,
   background-color: var(--old-lace);
 }
 
-.bg--blue {
-  background-color: var(--old-lace);
-}
-
 .bg--candy {
   background-color: var(--candy);
 }
@@ -7016,7 +7012,6 @@ img.footer-logo {
 .foo-links li {
   width: auto !important;
   display: block !important;
-  vertical-align: top;
   clear: none !important;
   margin: 0;
   padding: 0;
@@ -7361,11 +7356,11 @@ img.footer-logo {
 .sticky-icon {
   position: fixed;
   bottom: 20px;
-  right: 20px;
+  left: 20px;
   z-index: 9999;
   display: flex;
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   background-color: #007bff;
   /* Bootstrap primary */
   border-radius: 50%;
