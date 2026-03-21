@@ -4,7 +4,6 @@ import "./chatbot.css";
 const GEMINI_API_URL =
   "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent";
 const GEMINI_API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
-console.log("API Key:", import.meta.env.VITE_GEMINI_API_KEY)
 const SYSTEM_PROMPT = `Você é o assistente virtual da MentoraMed, uma plataforma digital de saúde corporativa brasileira.
 
 Seu papel é atender colaboradores, gestores de RH e empresas que buscam soluções em:
@@ -92,7 +91,7 @@ function formatBotMessage(text) {
     });
 
     // If this paragraph has bullet items, wrap in <ul>
-    const hasBullets = lines.some((l) => /^\s*[•\-\*]\s+/.test(l));
+    const hasBullets = lines.some((l) => /^\s*[•\-*]\s+/.test(l));
     if (hasBullets) {
       return (
         <ul key={pIdx} className="chatbot-bullet-list">
@@ -218,6 +217,8 @@ export default function Chatbot() {
       handleSend();
     }
   };
+
+  if (apiKeyMissing) return null;
 
   return (
     <div className="mentoramed-chatbot-wrapper">
