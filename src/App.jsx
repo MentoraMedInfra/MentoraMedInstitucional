@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/header/Header.jsx";
 import FooterSection from "./components/footer/FooterSection.jsx";
 import WhatsappSticky from "./components/WhatsappSticky.jsx";
